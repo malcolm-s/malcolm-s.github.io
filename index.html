@@ -66,6 +66,28 @@
       .bamboo-grove__tree-3 {
         width: 3rem;
       }
+
+      .wiggle:hover {
+        animation: wiggle 1s ease-in-out;
+      }
+      
+      @keyframes wiggle {
+        20% {
+          transform: rotate(-5deg);
+        }
+        40% {
+          transform: rotate(8deg);
+        }
+        60% {
+          transform: rotate(-8deg);
+        }
+        80% {
+          transform: rotate(5deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
     </style>
   </head>
 
@@ -90,7 +112,7 @@
         >
       </p>
     </div>
-    <div class="bamboo-grove__container">
+    <div class="bamboo-grove__container wiggle">
       <img
         class="bamboo-grove__tree bamboo-grove__tree-1"
         src="assets/26-bamboo.svg"
