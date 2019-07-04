@@ -10,17 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link
-      href="https://fonts.googleapis.com/css?family=Bungee|Karla&display=swap"
+      href="https://fonts.googleapis.com/css?family=Karla&display=swap"
       rel="stylesheet"
     />
 
     <style>
       body {
         font-family: "Karla", sans-serif;
-      }
-      .cursive {
-        font-family: "Bungee", cursive;
-        font-size: 2rem;
+        margin: 0;
       }
 
       .title-icon {
@@ -36,7 +33,14 @@
 
       .container {
         max-width: 30rem;
-        margin: 4rem auto;
+        margin: 6rem auto;
+        padding: 0 1rem;
+      }
+
+      .footer-links {
+        position: absolute;
+        bottom: 1rem;
+        margin-bottom: 0;
       }
 
       .bamboo-grove__container {
@@ -61,18 +65,15 @@
 
   <body>
     <div class="container">
-      <h1 class="cursive">
-        <span class="title-highlight">M</span>alcolm
-        <span class="title-highlight">S</span>tone<img
-          class="title-icon"
-          src="assets/20-leaf.svg"
-        />
+      <h1>
+        <strong>Malcolm Stone</strong
+        ><img class="title-icon" src="assets/20-leaf.svg" />
       </h1>
-      <p>Making software with humans, for humans.</p>
       <h2>Software Engineer</h2>
-      <p>
-        Get in touch via:
-        <br />
+      <p>Making software with humans, for humans.</p>
+      <p class="footer-links">
+        <em>Get in touch via:</em>
+        &nbsp;
         <a href="mailto:malcolm.stone91@gmail.com">Email</a>
         <a href="https://github.com/malcolm-s" target="_blank">Github</a>
         <a href="https://linkedin.com/in/malcolm-stone-b1264382" target="_blank"
