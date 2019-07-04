@@ -67,10 +67,13 @@
         width: 3rem;
       }
 
-      .wiggle:hover {
-        animation: wiggle 1s ease-in-out;
+      .wiggle {
+        animation-delay: 1.5s;
+        animation-name: wiggle;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
       }
-      
+
       @keyframes wiggle {
         20% {
           transform: rotate(-5deg);
